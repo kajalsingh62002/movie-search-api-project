@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB clone,Movie Search Website</title>
+    <!--font-awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+        <!---logo-->
+        <div class="logo">
+            <div class="container">
+                <font color="red" size="7">I</font>
+                <font color="yellow" size="6">M</font>
+                <font color="blue" size="7">D</font>
+                <font color="red" size="6">b</font>
+                <font color="green" size="7">C</font>
+                <font color="blue" size="6">L</font>
+                <font color="red" size="6">o</font>
+                <font color="yellow" size="7">n</font>
+                <font color="pink" size="6">e</font>
+            </div>
+        </div>
+        <!--end of logo--->
+        <!--seaRch container--->
+        <div class="search-container">
+            <div class="search-element">
+               
+                <input type="text" class="form-control" placeholder="search movie title.."onclick="findMovies()" id="movie-search-box"onkeyup="findMovies()">
+                  
+                
+                
+                <!--LIST HERE-->
+                   <div class="search-list" id="search-list"> 
+
+                 <!--<div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="img1.webp">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Guardians of the galaxy vol.2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div>--> <!--<div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="img1.webp">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Guardians of the galaxy vol.2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> --> 
+                       <!--<div class="search-list-item">-->
+                       <!-- <div class="search-item-thumbnail">
+                            <img src="img1.webp">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Guardians of the galaxy vol.2</h3>
+                            <p>2017</p>
+                        </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--end of search container-->
+        </div>
+
+        <!--result container-->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!--movie info here-->
+                    <!--<div class="movie-poster">
+                        <img src="img1.webp" alt="movie poster">
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3 class="movie-title">Guardians of the galaxy vol.2</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year:2017</li>
+                            <li class="rated">Ratings:PG-13</li>
+                            <li class="released">Released:05 May 2017</li>
+
+                        </ul>
+                        <p class="genre">
+                            <b>Genre:</b>Action,Adventure,Comedy</p>
+
+                        <p class="writer"><b>Writer:</b>James Gunn,Don Abnett,Andy Lanning</p>
+                        <p class="actors"><b>Actors:</b>chris Pratt, oe saldana, Dave Bautista</p>
+                        <p class="plot"><b>Plot:</b> The Guardians
+                            <p>struggles to keep togetheras a team
+                                <p>while dealing with their personal family issues</p>
+                            </p> , notably star-Lord's counter with his
+                            <p>father the ambitios celestial being Ego .</p>
+                        </p>
+                        <p class="Language"><b>Language:</b>English</p>
+                        <p class="awards"><b><i class="fa-solid fa-award "></i>
+                            </b>Nominated for 1 oscar
+                        </p>
+
+                    </div>-->
+                </div>
+
+            </div>
+        </div>
+        <!--end f result container-->
+    </div>
+    <!--movie app js-->
+    <script src=" index.js ">
+    </script>
+</body>
+</html>

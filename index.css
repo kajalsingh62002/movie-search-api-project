@@ -1,0 +1,307 @@
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+            :root {
+                --md-dark-color: #1d1d1d;
+                --light-pink-color: #99999917;
+                --light-dark-color: #29292929;
+                --yellow-color: #d4aa11;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            .wrapper {
+                min-height: 100vh;
+                background-color:  #3b2f2f;;
+            }
+
+            .wrapper .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0.1rem;
+            }
+
+            .search-container {
+                background-color: var(--md-dark-color);
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+
+            .logo {
+                padding: 1rem 0;
+                border-bottom: 1px solid var(--light-dark-color)
+            }
+
+            .logo p {
+                font-size: 2rem;
+                color: rgb(175, 5, 5);
+                font-weight: bold;
+            }
+
+            .logo p span {
+                color: var(--yellow-color);
+            }
+
+            .search-element {
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .search-element h3 {
+                align-self: center;
+                font-size: 1rem;
+                color: white;
+                font-weight: 500;
+                margin-right: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .search-element .form-control {
+                padding: 1rem 2rem;
+                font-size: 1.4rem;
+                border: none;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                outline: none;
+                color: var(--yellow-color);
+                width: 350px;
+            }
+
+            .search-list {
+                position: absolute;
+                right: 0;
+                top: 100%;
+                max-height: 500px;
+                overflow-y: scroll;
+                z-index: 10;
+            }
+
+            .search-list .search-list-item {
+                background-color: black;
+                width: 340px;
+                padding: 0.5rem;
+                border-bottom: 1px solid rgb(31, 18, 18);
+                color: white;
+                cursor: pointer;
+                transition: 200ms ease;
+            }
+
+            .serach-list .search-list-item:Hover {
+                background-color: rgb(105, 95, 95);
+            }
+
+            .search-list-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .search-item-thumbnail img {
+                width: 40px;
+                height: 50px;
+                margin-right: 1rem;
+            }
+
+            .search-item-info p {
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+                font-weight: 600;
+                opacity: 0.6;
+            }
+
+            .search-item-info h3 {
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            /*thumbnail*/
+
+            .search-list::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0, 3);
+            }
+
+            .search-list::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .search-list::-webkit-scrollbar-thumb {
+                background-color: var(--yellow-color);
+                outline: none;
+                border-radius: 10px;
+            }
+
+            /*js related class*/
+
+            .hide-search-list {
+                display: none;
+            }
+
+            /*movie result*/
+
+            .result-container {
+                padding: 3rem 0rem;
+            }
+
+            .movie-poster img {
+                max-width: 230px;
+                min-height: 300px;
+                margin: 0 auto;
+                border: 4px solid rgb(189, 173, 173);
+                margin-top: 1.8rem;
+            }
+
+            .movie-info {
+                text-align: center;
+                color: white;
+                padding-top: 3rem;
+            }
+
+            /*moie info stylings*/
+
+            .movie-title {
+                font-size: 2rem;
+                color: var(--yellow-color);
+            }
+
+            .movie-misc-info {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            .movie-info .years {
+                font-weight: 500;
+            }
+
+            .movie-info .rated {
+                background-color: var(--yellow-color);
+                margin: 0 0.4rem;
+                padding: 0.4rem;
+                border-radius: 3px;
+                font-weight: 600;
+            }
+
+            .movie-info .released {
+                font-size: 0.9rem;
+                opacity: 0.9;
+            }
+
+            .movie-info .writer {
+                margin: 1rem 0;
+                padding: 0.5rem;
+            }
+
+            .movie-info .genre {
+                background-color: var(--light-dark-color);
+                display: inline-block;
+                padding: 0.5rem;
+                border-radius: 3px;
+            }
+
+            .movie-info .plot {
+                max-width: 400px;
+                margin: 1rem auto;
+            }
+
+            .movie-info .Language {
+                color: var(--yellow-color);
+                font-style: italic;
+            }
+
+            .move-info .awards {
+                font-weight: 300;
+                font-size: 0.9rem;
+            }
+
+            .movie-info .awards i {
+                color: var(--yellow-color);
+                margin: 1rem 0.7rem 0 0;
+            }
+
+            @media(max-width:450px) {
+                .logo p {
+                    font-size: 1.4rem;
+                }
+
+                .search-element .form-control {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 0.5rem 1rem;
+                }
+
+                .search-element h3 {
+                    font-size: 1.4rem;
+                }
+
+                .search-list {
+                    width: 90%;
+                    right: 50%;
+                    transform: translate(50%)
+                }
+
+                .search-list .search-list-item {
+                    width: 100%;
+                }
+
+                .movie-misc-info {
+                    flex-direction: column;
+                }
+
+                .movie-misc-info li :nth-child(2) {
+                    margin: 0.8rem 0;
+                }
+            }
+
+            @media(min-width:800px) {
+                .search-element {
+                    flex-direction: row;
+                }
+
+                .search-element h3 {
+                    margin-bottom: 0;
+                }
+
+                .result-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+               .movie-info{
+                text-align:left;
+                padding-top:0;
+
+               }
+               .movie-info .movie-misc-info{
+                justify-content: flex-start;
+                padding-left:0;
+               }
+               .movie-info .plot{
+                margin-left:0;
+
+               }
+               .movie-info .writer{
+                padding-left:0;
+                margin-left:0;
+               }
+            }
